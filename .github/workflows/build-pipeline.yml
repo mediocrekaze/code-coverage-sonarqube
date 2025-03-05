@@ -41,6 +41,9 @@ jobs:
         run: |
           cd python
           pip install -r requirements.txt
+          coverage run -m unittest discover
+          coverage report -m
+          coverage xml          
       - name: build and test application - java
         run: |
           cd java

@@ -41,6 +41,9 @@ jobs:
         run: |
           cd python
           pip install -r requirements.txt
+          coverage run -m unittest discover
+          coverage report -m
+          coverage xml          
       - name: build and test application - java
         run: |
           cd java
@@ -55,5 +58,6 @@ jobs:
             -Dsonar.organization=mediocrekaze
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.sources=python,java/src
-            -Dsonar.python.coverage.reportPaths=coverage.xml
+            -Dsonar.python.version=3.12
+            -Dsonar.python.coverage.reportPaths=python/coverage.xml
             -Dsonar.java.binaries=java/target/classes

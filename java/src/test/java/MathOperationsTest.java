@@ -1,11 +1,10 @@
-//import org.junit.jupiter.api.Test;
-//import static org.junit.jupiter.api.Assertions.*;
-
-//public class MathOperationsTest {
-//    @Test
-//    public void testAdd() {
-//        assertEquals(5, MathOperations.add(2, 3));
-//    }
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+public class MathOperationsTest {
+    @Test
+    public void testAdd() {
+        assertEquals(5, MathOperations.add(2, 3));
+    }
 
 //    @Test
 //    public void testSubtract() {

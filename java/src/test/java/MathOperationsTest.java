@@ -5,7 +5,7 @@ public class MathOperationsTest {
     public void testAdd() {
         assertEquals(5, MathOperations.add(2, 3));
     }
-
+//
 //    @Test
 //    public void testSubtract() {
 //        assertEquals(2, MathOperations.subtract(5, 3));
@@ -15,7 +15,7 @@ public class MathOperationsTest {
 //    public void testMultiply() {
 //        assertEquals(6, MathOperations.multiply(2, 3));
 //    }
-
+//
 //    @Test
 //    public void testDivide() {
 //        assertEquals(3.0, MathOperations.divide(6, 2));
@@ -24,4 +24,4 @@ public class MathOperationsTest {
 //        });
 //        assertEquals("Cannot divide by zero", exception.getMessage());
 //    }
-//}
+}

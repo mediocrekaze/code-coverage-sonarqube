@@ -50,6 +50,7 @@ jobs:
         run: |
           cd java
           mvn clean test
+          mvn jacoco:report
       - name: sonarqube scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:

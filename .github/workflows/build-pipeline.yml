@@ -6,6 +6,7 @@ on:
       - sonarqube-prd
       - sonarqube-dev
       - release-*
+      - test-*
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
